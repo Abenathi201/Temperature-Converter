@@ -8,27 +8,122 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #000000;
     background-image: linear-gradient(147deg, #000000 0%, #04619f 74%);
-    /* min-height: 90rem; */
-    /* align-items: center; */
+    min-height: 90rem;
+    align-items: center;
     /* display: flex;
     justify-content: center; */
 }
 
-/* .temp {
-    text-align: center;
-    width: 32.25rem;
-    background-color: rgb(211, 211, 219);
-} */
 .container {
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 100vh;
+    text-align: center;
+    /* width: 100%; */
+    height: 40rem;
     display: flex;
+    
 }
 .temp {
+    width: 30rem;
+    border-radius: 1.25rem;
     justify-content: center;
     align-items: center;
-    
-    
+    background-color: #002147;
+    padding: 1.25rem;   
+}
+
+h1{
+    margin-top: 1.25rem;
+}
+
+.text{
+    padding-top: 1.25rem;
+    font-weight: 600;
+}
+
+#input {
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+    height: 1.85rem;
+    width: 15rem;
+    border-radius: 0.65rem;
+    border: none;
+    text-align: center;
+}
+
+#input:focus{
+    width: 20rem;
+    transition: 0.3s;
+    text-align: center;
+}
+
+#btn{
+    font-family: inherit;
+    border: none;
+    outline: none;
+    border-radius: 0.85rem;
+    width: 9.5rem;
+    padding: 0.65rem;
+    color: black;
+    font-size: 0.81rem;
+    font-weight: 600;
+    background-image: linear-gradient(147deg, #000000 0%, #04619f 74%);
+    cursor: pointer;
+    margin: 0 0.2rem;
+}
+
+#header, #output{
+    font-family: inherit;
+    margin-top: 1.25rem;
+}
+
+#header{
+    font-weight: 600;
+}
+
+#clear{
+    margin-top: 1.25rem;
+    font-family: inherit;
+    border: none;
+    outline: none;
+    border-radius: 1rem;
+    width: 9.5rem;
+    padding: 0.65rem;
+    color: black;
+    font-size: 0.81rem;
+    font-weight: 600;
+    background-image: linear-gradient(147deg, #000000 0%, #1d06cb 74%);
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 300px) {
+    body{
+        background-color: #2d3436;
+        background-image: linear-gradient(315deg, #2d3436 0%, #000000 74%);
+    }
+    .temp{
+        background-color: #7F8C8D;
+    }
+    #input {
+        margin-top: 1.25rem;
+        margin-bottom: 1.25rem;
+        height: 1.85rem;
+        width: 15rem;
+        border-radius: 0.65rem;
+        border: none;
+        text-align: center;
+    }
+    #input:focus{
+        width: 15rem;
+        transition: 0.3s;
+        text-align: center;
+    }
+    #btn{
+        margin: 0.8rem 0;
+        background-image: linear-gradient(315deg, #2d3436 0%, #4c4b4b 74%);
+    }
+    #clear{
+        margin-top: 0.8rem;
+        background-image: linear-gradient(315deg, #2d3436 0%, #4c4b4b 74%);
+    }
 }
